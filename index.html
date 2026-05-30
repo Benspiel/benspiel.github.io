@@ -6,6 +6,25 @@
   <title>Benspiel — Full Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="logo.png">
+  <script>
+    (function() {
+      const img = new Image();
+      img.onload = function() {
+        const c = document.createElement('canvas');
+        c.width = c.height = 64;
+        const ctx = c.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(32, 32, 32, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(img, 0, 0, 64, 64);
+        const link = document.querySelector("link[rel='icon']");
+        link.href = c.toDataURL('image/png');
+      };
+      img.src = 'logo.png';
+    })();
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 
