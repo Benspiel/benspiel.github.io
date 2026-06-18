@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Benspiel — Full Stack Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="logo.png">
   <script>
     (function() {
@@ -25,8 +23,6 @@
       img.src = 'logo.png';
     })();
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     :root {
@@ -41,12 +37,12 @@
     body {
       background-color: #0d0d0d;
       color: #fff;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       overflow-x: hidden;
       min-height: 100vh;
     }
 
-    h1, h2, h3, h4 { font-family: 'Archivo', sans-serif; }
+    h1, h2, h3, h4 { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
 
     /* ── Grid background ─────────────────────────────── */
     #grid-bg {
@@ -135,7 +131,7 @@
 
     /* ── Tags ────────────────────────────────────────── */
     .tag {
-      font-family: 'Space Grotesk', monospace;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
       font-size: 0.73rem;
       font-weight: 500;
       background: rgba(255,255,255,0.05);
@@ -147,6 +143,21 @@
     }
 
     /* ── Section label ───────────────────────────────── */
+    .legal-card {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 22px;
+      color: #6b7280;
+      line-height: 1.75;
+      font-size: 0.9rem;
+    }
+
+    .legal-card h3 { color: #fff; font-size: 1rem; margin: 22px 0 8px; }
+    .legal-card h3:first-child { margin-top: 0; }
+    .legal-card a { color: #9ca3af; text-decoration: underline; text-underline-offset: 3px; }
+    .legal-card ul { margin: 8px 0 0 18px; }
+
     .section-label {
       font-size: 0.7rem;
       font-weight: 600;
@@ -163,7 +174,7 @@
       border-radius: 9px;
       padding: 11px 15px;
       color: #fff;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-size: 0.9rem;
       outline: none;
       transition: border-color 0.2s;
@@ -280,6 +291,10 @@
     <div class="side-line"></div>
     <a class="side-nav-item" href="#projects" data-section="projects">
       <div class="side-dot"><span class="side-label">Projekte</span></div>
+    </a>
+    <div class="side-line"></div>
+    <a class="side-nav-item" href="#legal" data-section="legal">
+      <div class="side-dot"><span class="side-label">Rechtliches</span></div>
     </a>
   </nav>
 
@@ -408,12 +423,69 @@
     </section>
 
 
+    <!-- ──────────────── LEGAL ───────────────────────── -->
+    <section id="legal" style="padding:96px 24px;">
+      <div style="max-width:1100px;margin:0 auto;">
+        <div style="margin-bottom:36px;">
+          <p class="section-label" style="margin-bottom:10px;">Rechtliches</p>
+          <h2 style="font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;color:#fff;">Impressum & Datenschutz</h2>
+          <p style="color:#374151;margin-top:10px;max-width:620px;line-height:1.75;font-size:0.9rem;">
+            Transparente Pflichtangaben und Datenschutzhinweise für diese statische Portfolio-Webseite.
+          </p>
+        </div>
+
+        <div class="legal-card">
+          <h3>Impressum</h3>
+          <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
+          <p style="margin-top:8px;">
+            Benspiel<br>
+            Verantwortlich für den Inhalt dieser Webseite.<br>
+            Kontakt: <a href="https://github.com/benspiel" target="_blank" rel="noopener noreferrer">github.com/benspiel</a>
+          </p>
+          <p style="margin-top:12px;">
+            Hinweis: Falls diese Webseite geschäftsmäßig oder mit Gewinnerzielungsabsicht betrieben wird, müssen Name, ladungsfähige Anschrift und eine unmittelbare elektronische Kontaktmöglichkeit vollständig ergänzt werden, bevor die Seite veröffentlicht wird.
+          </p>
+
+          <h3>Haftung für Inhalte</h3>
+          <p>
+            Die Inhalte dieser Webseite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Als Diensteanbieter bin ich für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich.
+          </p>
+
+          <h3>Haftung für Links</h3>
+          <p>
+            Diese Webseite enthält Links zu externen Angeboten, insbesondere zu GitHub. Auf deren Inhalte habe ich keinen Einfluss. Für externe Inhalte ist stets der jeweilige Anbieter verantwortlich. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar; bei Bekanntwerden entsprechender Rechtsverletzungen werden Links entfernt.
+          </p>
+
+          <h3>Urheberrecht</h3>
+          <p>
+            Die auf dieser Webseite erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Nutzung außerhalb der gesetzlichen Schranken bedürfen der vorherigen Zustimmung des jeweiligen Rechteinhabers.
+          </p>
+
+          <h3>Datenschutzerklärung</h3>
+          <p>
+            Diese Webseite ist als statische Portfolio-Seite gestaltet. Sie setzt keine Cookies, verwendet kein Tracking, bindet keine Analyse-Dienste ein und lädt keine Schriftarten, Skripte oder Stylesheets von Drittanbietern. Beim Aufruf können technisch notwendige Zugriffsdaten durch den Hosting-Anbieter verarbeitet werden, zum Beispiel IP-Adresse, Datum und Uhrzeit des Abrufs, angeforderte Datei, Referrer-URL, Browsertyp und Betriebssystem. Diese Verarbeitung dient der sicheren und zuverlässigen Bereitstellung der Webseite.
+          </p>
+          <p style="margin-top:12px;">
+            Rechtsgrundlage ist, soweit personenbezogene Daten verarbeitet werden, Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technischen Bereitstellung, Stabilität und Sicherheit der Webseite. Eine Zusammenführung dieser Daten mit anderen Datenquellen findet durch mich nicht statt.
+          </p>
+
+          <h3>Betroffenenrechte</h3>
+          <p>
+            Betroffene Personen haben nach Maßgabe der DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Zudem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- ──────────────── FOOTER ───────────────────────── -->
     <footer style="padding:28px 24px;border-top:1px solid rgba(255,255,255,0.05);">
       <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
-        <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:1rem;color:#fff;">benspiel.</span>
+        <span style="font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:900;font-size:1rem;color:#fff;">benspiel.</span>
         <p style="font-size:0.75rem;color:#1f2937;">&copy; 2026 Benspiel.</p>
-        <a href="#" style="font-size:0.75rem;color:#1f2937;text-decoration:none;cursor:pointer;" onmouseover="this.style.color='#374151'" onmouseout="this.style.color='#1f2937'">Nach oben &uarr;</a>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="#legal" style="font-size:0.75rem;color:#1f2937;text-decoration:none;cursor:pointer;" onmouseover="this.style.color='#374151'" onmouseout="this.style.color='#1f2937'">Impressum & Datenschutz</a>
+          <a href="#" style="font-size:0.75rem;color:#1f2937;text-decoration:none;cursor:pointer;" onmouseover="this.style.color='#374151'" onmouseout="this.style.color='#1f2937'">Nach oben &uarr;</a>
+        </div>
       </div>
     </footer>
 
@@ -452,7 +524,7 @@
 
     // ── Side nav: active dot via IntersectionObserver ──
     const navItems = document.querySelectorAll('.side-nav-item');
-    const sections = ['hero', 'projects'].map(id => document.getElementById(id));
+    const sections = ['hero', 'projects', 'legal'].map(id => document.getElementById(id));
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
